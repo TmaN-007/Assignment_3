@@ -1,0 +1,71 @@
+Reflection on AI only development:
+
+AI was able to give me a solid starting point
+ with the overall structure and logic working as expected. 
+ At the same time, it added some things that weren’t really useful 
+ and missed a few details that I had to go back and fix. The basics
+ were done right about how to follow the rules about the classes and
+ the setters and getters and properties. But it wasn't able to 
+ articulate MVC structure quite a bit, it was showing view components
+ in the model components, so that was something I had to go back and fix
+ and reprompt and guide it to do it MVC way so that all the parts are
+ independent of eachother. It also couldn't add pytest module right, 
+ I had to manually go and do the venv for the session and install 
+ pytest, if this was something someone doing AiDD didn't know it 
+ wouldn't work.
+
+ AI made the whole process feel a lot easier. Normally, getting 
+ started is the hardest part, but having something already written 
+ for me meant I could just dive in and shape it instead of starting 
+ from scratch. That alone saved me a ton of time and energy. It also
+ helped me to learn how to prompt better for everything as AI makes
+ some mistakes I learn how to prompt better to let AI not make the 
+ mistakes again. It also took care of a lot of the repetitive parts 
+ that I usually get stuck doing. Things like setting up basic structure 
+ or writing out the same kinds of code over and over weren’t on me this 
+ time. That freed me up to spend more time actually thinking about how 
+ the pieces fit together and whether the logic made sense. When I
+wasn’t sure what to do next, I could just ask for some help and it
+would direct me int he right way. using AI to code defenitely felt
+like a time saver and a good source of help.
+
+If AI ever gets to the point where it can take a spec and just finish
+the whole project, the job of a programmer would look really different. 
+Instead of spending most of the time writing code, we’d be spending it 
+checking if the code actually works, testing it, and making sure it fits 
+what the business needs. It would be less about typing and more about 
+thinking critically. This type of development actually will provide a 
+lot of opportunities for begineer level developers to develop their 
+skillset faster and all the senior level people could just make sure the 
+logic and the business rules are being applied and th work would be done 
+very fast.
+
+AI was able to get the idea of OOP across by creating classes with 
+properties and basic inheritance, but the way it used them wasn’t always 
+right. For example, it sometimes placed code that was meant to handle 
+displaying information inside the same class that was supposed to only 
+handle data, which mixed the roles of the model and the view. I had to 
+move that logic out so the model only stored and validated data while 
+the view focused on how things were shown. Another issue was with 
+polymorphism where it could override methods but the subclasses didn’t 
+really add new behavior, they just repeated what the parent already 
+had. I had to adjust those so the subclasses carried their own unique 
+attributes and behavior. All the changes I had to make actually took
+us closer to the requirements that we were given.
+
+I’d say AI probably saved me around sixty percent of my time on the 
+repetitive stuff like setting up classes, writing out the getters and 
+setters, and handling the little things that always take longer than 
+you expect. The harder logic still needed my attention, but it was 
+easier to get to that part because the groundwork was already there. 
+From a managers view, the value is in howm uch faster you can move 
+through the boring and repetitive parts so more energy goes into the 
+parts that actually matter. The main risk is that AI can give you 
+code that looks fine at first glance but ends up breaking once you 
+actually run it. You can’t just take it at face value, you really
+have to test it yourself. Another thing is if people start relying 
+on it too much, especially beginners, they might skip learning the 
+basics and just let the AI do everything for them. And sometimes 
+the code has little problems under the surface that you don’t 
+notice right away, which could turn into bigger issues later. So 
+yeah, it’s super helpful, but you still need to keep an eye on it.

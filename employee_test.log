@@ -1,0 +1,28 @@
+2025-09-16 19:28:30,765 - INFO - ✓ Valid Employee created: Employee(ID: E001, Name: John Doe, Dept: ENG, Phone: (555)123-4567)
+2025-09-16 19:28:30,765 - INFO - ✓ Valid Manager created: Manager(ID: M001, Name: Jane Smith, Dept: ITM, Phone: (555)987-6543, Team Size: 8, Office: A-205)
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Empty first name: First name cannot be empty
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Digits in first name: First name cannot contain digits
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Digits in last name: Last name cannot contain digits
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Invalid department (4 chars): Department must be exactly 3 characters
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Lowercase department: Department must be uppercase letters
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Department with digit: Department must contain only letters
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Phone too short: Phone number must contain exactly 10 digits
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Phone too long: Phone number must contain exactly 10 digits
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Phone with letters: Phone number must contain exactly 10 digits
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Empty phone number: Phone number cannot be empty
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Negative team size: Team size must be a non-negative integer
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Non-integer team size: Team size must be a non-negative integer
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for Empty office number: Office number cannot be empty
+2025-09-16 19:28:30,765 - ERROR - ✓ Expected validation error for None office number: Office number cannot be empty
+2025-09-16 19:28:30,765 - INFO - ✓ Phone sanitization: '(555) 123-4567' → stored as '5551234567' → formatted as '(555)123-4567'
+2025-09-16 19:28:30,765 - INFO - ✓ Phone sanitization: '555.123.4567' → stored as '5551234567' → formatted as '(555)123-4567'
+2025-09-16 19:28:30,765 - INFO - ✓ Phone sanitization: '555-123-4567' → stored as '5551234567' → formatted as '(555)123-4567'
+2025-09-16 19:28:30,766 - INFO - ✓ Phone sanitization: '5551234567' → stored as '5551234567' → formatted as '(555)123-4567'
+2025-09-16 19:28:30,766 - INFO - ✓ Phone sanitization: '(555)123-4567' → stored as '5551234567' → formatted as '(555)123-4567'
+2025-09-16 19:28:30,766 - INFO - ✓ Phone sanitization: '555 123 4567' → stored as '5551234567' → formatted as '(555)123-4567'
+2025-09-16 19:28:30,766 - INFO - ✓ Employee created with ID: R001
+2025-09-16 19:28:30,766 - INFO - ✓ ID modification correctly prevented: Employee ID is read-only and cannot be modified
+2025-09-16 19:28:30,766 - INFO - ✓ Polymorphism demonstration:
+2025-09-16 19:28:30,766 - INFO -   Employee: Employee(ID: P001, Name: Poly Employee, Dept: ENG, Phone: (555)111-1111)
+2025-09-16 19:28:30,766 - INFO -   Manager: Manager(ID: P002, Name: Poly Manager, Dept: ITM, Phone: (555)222-2222, Team Size: 3, Office: C-301)
+2025-09-16 19:28:30,766 - INFO - All tests completed successfully!
