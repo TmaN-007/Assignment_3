@@ -1,3 +1,11 @@
 id,fname,lname,department,phNumber,employee_type,team_size,office_number
-12,wd,qdsdc,INT,1212121212,M,23,34
-4534,wrfcw,wcwc,ONT,1223344556,E,,
+E001,John,Doe,ENG,5551234567,E,,
+E002,Sarah,Johnson,MKT,5552345678,E,,
+E003,Michael,Brown,FIN,5553456789,E,,
+E004,Emily,Davis,ITM,5554567890,E,,
+E005,David,Wilson,ENG,5555678901,E,,
+M001,Jennifer,Smith,ENG,5556789012,M,8,A-201
+M002,Robert,Garcia,MKT,5557890123,M,5,B-105
+M003,Lisa,Miller,FIN,5558901234,M,6,C-302
+M004,James,Anderson,ITM,5559012345,M,12,D-401
+M005,Maria,Martinez,HRM,5550123456,M,4,E-150
