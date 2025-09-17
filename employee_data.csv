@@ -1,3 +1,3 @@
-id,fname,lname,department,phNumber,team_size,office_number
-12,Gautham,Jayakrishnan,INT,3177205844,,
-34,efv,qd,INT,1231231232,12,31
+id,fname,lname,department,phNumber,employee_type,team_size,office_number
+12,wd,qdsdc,INT,1212121212,M,23,34
+4534,wrfcw,wcwc,ONT,1223344556,E,,

@@ -23,8 +23,8 @@ def load_employees_from_csv(filename="employee_data.csv"):
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                # Check if this is a Manager (has team_size and office_number)
-                if 'team_size' in row and 'office_number' in row and row['team_size'] and row['office_number']:
+                # Check employee type using the employee_type column
+                if 'employee_type' in row and row['employee_type'] == 'M':
                     employee = Manager(
                         id=row['id'],
                         fname=row['fname'],
@@ -67,7 +67,7 @@ def save_employees_to_csv(employees, filename="employee_data.csv"):
     """
     try:
         with open(filename, 'w', newline='') as csvfile:
-            fieldnames = ['id', 'fname', 'lname', 'department', 'phNumber', 'team_size', 'office_number']
+            fieldnames = ['id', 'fname', 'lname', 'department', 'phNumber', 'employee_type', 'team_size', 'office_number']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
             writer.writeheader()
@@ -79,6 +79,7 @@ def save_employees_to_csv(employees, filename="employee_data.csv"):
                     'lname': employee.lname,
                     'department': employee.department,
                     'phNumber': employee._ph_number,  # Use raw digits for storage
+                    'employee_type': 'M' if isinstance(employee, Manager) else 'E',
                     'team_size': '',
                     'office_number': ''
                 }
